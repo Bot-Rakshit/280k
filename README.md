@@ -5,16 +5,20 @@ Fine-tune Qwen2.5-1.5B-Instruct on ~280K chess positions.
 ## Files
 
 - `train_qwen_1.5b_a100.ipynb` - Training notebook for A100 GPU
+- `train_data_part1.jsonl` - Training data part 1 (~140K examples)
+- `train_data_part2.jsonl` - Training data part 2 (~140K examples)
 - `merge_data.py` - Script to merge puzzle and SF position data
 - `stockfish_labeler.py` - Stockfish labeling script
 
-## Data
+## Quick Start
 
-The training data file (`train_data_280k.jsonl`, 172MB) is too large for GitHub.
+```bash
+git clone https://github.com/Bot-Rakshit/280k.git
+cd 280k
+# Upload to your GPU instance and run the notebook
+```
 
-**Download from:** [Add your link here after uploading]
-
-Or generate it yourself using the data pipeline in the main repo.
+The notebook automatically merges the two data files.
 
 ## Data Format
 
